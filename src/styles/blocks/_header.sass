@@ -1,0 +1,133 @@
+.header
+  padding: 16px 0
+  transition: background .2s ease
+  &__wrap
+    display: flex
+    align-items: center
+    font-family: 'Montserrat', sans-serif
+  &__phone
+    display: flex
+  &__logo
+    width: 130px
+    margin-right: 70px
+  &__nav-box
+    margin-right: 70px
+
+.media
+  &__link
+    text-decoration: none
+    margin-right: 25px
+    &:last-child
+      margin-right: 0
+    &:hover .media__icon
+      color: $accent
+
+.media-icon
+  font-size: rem(22px)
+  color: #000
+  transition: .2s ease color
+  will-change: color
+  &:hover
+    color: $accent
+
+.logo
+  &__link
+    text-decoration: none
+    font-weight: bold
+    color: #000
+
+.phone
+  color: $black
+  text-decoration: none
+  font-size: em(18px)
+  font-weight: 600
+  transition: .2s ease
+  white-space: nowrap
+
+.nav
+  position: relative
+  display: flex
+  list-style: none
+  &__item
+    margin-right: rem(30px)
+    font-size: rem(18px)
+    border-bottom: 1px solid $grey
+    transition: .2s ease border
+    &:last-child
+      margin-right: 0
+    &:hover
+      border-bottom: 1px solid $accent
+      .nav__link
+        color: $accent
+    &.active
+      border-bottom: 1px solid $accent
+      .nav__link
+        color: $accent
+  &__link
+    text-decoration: none
+    color: #000
+    transition: .2s ease color
+
+.burger
+  display: none
+  justify-content: space-between
+  flex-direction: column
+  height: 28px
+  width: 30px
+  padding: 4px
+  &:hover
+    .burger__line
+      &:nth-child(1)
+        transform: translateY(2px)
+      &:nth-child(3)
+        transform: translateY(-2px)
+  &__line
+    width: 100%
+    height: 2px
+    border-radius: 2px
+    display: block
+    background: $black
+    transition: transform .3s ease
+    &:nth-child(1)
+      transform-origin: right
+    &:nth-child(2)
+      transform: scaleX(1)
+      transform-origin: center
+    &:nth-child(3)
+      transform-origin: right
+  &--active
+    .burger__line
+      &:nth-child(1)
+        transform: rotate(-45deg) scale(1.15) !important
+      &:nth-child(2)
+        transform: scaleX(0) !important
+      &:nth-child(3)
+        transform: rotate(45deg) scale(1.15) !important
+
+.mobile-menu
+  display: none
+
+@media (max-width: 1199px)
+  /* */
+
+@media (max-width: 991px)
+  /* */ 
+
+@media (max-width: 767px)
+  .header
+    &__phone
+      flex-grow: 1
+      justify-content: flex-end
+      margin-right: 30px
+  .header__nav-box
+    display: none
+
+  .burger
+    display: flex
+
+  /* */
+
+@media (max-width: 575px)
+  /* */
+@media (max-width: 375px)
+  /* */

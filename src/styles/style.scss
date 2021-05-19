@@ -1,0 +1,37 @@
+@import "vars";
+
+@import "fonts";
+
+@import "vendors";
+
+@import "settings";
+
+@import "typhography";
+
+@import "global"; //дополнительные классы
+
+// Подключение универсальных блоков
+
+@import "blocks/text-box"; // стили для текстовых блоков
+
+@import "blocks/header"; // Шапка
+
+@import "blocks/footer"; // Подвал
+
+@import "blocks/banner";
+
+@import "blocks/form";
+
+// Каждая страница подключается отдельно и включает в себя уникальные стили, все универсальные блоки подключаем выше
+
+@import "pages/index"; // главная
+
+@import "pages/default-page";
+
+@import "pages/articles";
+
+@import "pages/contacts";
+
+@import "pages/products";
+
+@import "pages/404";

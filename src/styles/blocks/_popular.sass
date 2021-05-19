@@ -1,0 +1,61 @@
+.popular
+  &--main
+    margin-bottom: 190px
+  &__wrap
+
+  &__list
+    display: flex
+    flex-wrap: wrap
+    .popular-item
+      width: calc(100%/3 - 30px)
+      margin-right: 30px
+      &:last-child
+        width: calc(100%/3)
+        margin-right: 0
+  &__title
+    margin-bottom: rem(70px)
+
+.popular-item
+  &__picture
+    height: 150px
+    display: block
+    margin-bottom: 40px
+  &__name
+    font-size: rem(24px)
+    font-weight: 900
+    line-height: 1.2
+    text-align: right
+
+@media (max-width: 1199px)
+  /* */
+
+@media (max-width: 991px)
+  /* */ 
+
+@media (max-width: 767px)
+  /* */
+
+@media (max-width: 575px)
+  .popular
+    &--main
+      margin-bottom: 80px
+    &__title
+      margin-bottom: rem(30px)
+    &__list
+      .popular-item
+        width: 100%
+        margin-right: 0
+        margin-bottom: 20px
+        &__name
+          text-align: center
+        &:last-child
+          width: 100%
+
+  .popular-item
+    &__picture
+      margin-bottom: 20px
+    &__name
+      font-size: rem(18px)
+
+@media (max-width: 375px)
+  /* */
