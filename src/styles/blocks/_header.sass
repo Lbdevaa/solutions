@@ -13,23 +13,6 @@
   &__nav-box
     margin-right: 70px
 
-.media
-  &__link
-    text-decoration: none
-    margin-right: 25px
-    &:last-child
-      margin-right: 0
-    &:hover .media__icon
-      color: $accent
-
-.media-icon
-  font-size: rem(22px)
-  color: #000
-  transition: .2s ease color
-  will-change: color
-  &:hover
-    color: $accent
-
 .logo
   &__link
     text-decoration: none
@@ -37,7 +20,7 @@
     color: #000
 
 .phone
-  color: $black
+  color: #000
   text-decoration: none
   font-size: em(18px)
   font-weight: 600
@@ -51,18 +34,18 @@
   &__item
     margin-right: rem(30px)
     font-size: rem(18px)
-    border-bottom: 1px solid $grey
+    border-bottom: 1px solid #e3e3e3
     transition: .2s ease border
     &:last-child
       margin-right: 0
     &:hover
-      border-bottom: 1px solid $accent
+      border-bottom: 1px solid var(--accent)
       .nav__link
-        color: $accent
+        color: var(--accent)
     &.active
-      border-bottom: 1px solid $accent
+      border-bottom: 1px solid var(--accent)
       .nav__link
-        color: $accent
+        color: var(--accent)
   &__link
     text-decoration: none
     color: #000
@@ -86,7 +69,7 @@
     height: 2px
     border-radius: 2px
     display: block
-    background: $black
+    background: #000
     transition: transform .3s ease
     &:nth-child(1)
       transform-origin: right
@@ -103,31 +86,3 @@
         transform: scaleX(0) !important
       &:nth-child(3)
         transform: rotate(45deg) scale(1.15) !important
-
-.mobile-menu
-  display: none
-
-@media (max-width: 1199px)
-  /* */
-
-@media (max-width: 991px)
-  /* */ 
-
-@media (max-width: 767px)
-  .header
-    &__phone
-      flex-grow: 1
-      justify-content: flex-end
-      margin-right: 30px
-  .header__nav-box
-    display: none
-
-  .burger
-    display: flex
-
-  /* */
-
-@media (max-width: 575px)
-  /* */
-@media (max-width: 375px)
-  /* */

@@ -6,6 +6,7 @@
 .link
   text-decoration: none
   transition: 0.2s ease
+  will-change: transform
   color: #000000
   cursor: pointer
   background-color: transparent
@@ -33,7 +34,7 @@
   padding: rem(16px) rem(54px)
   color: #ffffff
   text-decoration: none
-  border: 1px solid $accent
+  border: 1px solid var(--accent)
   border-radius: 30px
   width: 100%
   text-align: center
@@ -41,11 +42,11 @@
   transition: .25s ease
   will-change: box-shadow, color, background-color
   cursor: pointer
-  background-color: $accent
+  background-color: var(--accent)
   box-shadow: 0px 2px 0px 1px #00000080
   &:hover
     background-color: #fff
-    color: $accent
+    color: var(--accent)
   &:active
     box-shadow: 0 1px 5px rgba(0,0,0,.8) inset
 
@@ -67,13 +68,13 @@
 .select
   border: none
   outline: none
-  background-color: $blue
+  background-color: var(--accent)
   padding: rem(14px) rem(10px)
   font-family: 'Montserrat', sans-serif
   font-size: rem(14px)
   color: #ffffff
   border-radius: 5px
-  border: 1px solid $blue
+  border: 1px solid var(--accent)
   width: 100%
   cursor: pointer
   transition: .25s ease
@@ -96,7 +97,7 @@
   transition: .25s ease
   width: 100%
   &:focus, &:hover
-    border: 1px solid $blue
+    border: 1px solid var(--accent)
     background: #ffffff
     color: #000000
 
@@ -114,28 +115,3 @@
 
 .grid
   display: grid
-
-@media (max-width: 1199px)
-  /* */
-
-@media (max-width: 991px)
-  /* */ 
-
-@media (max-width: 767px)
-  .section-title
-    font-size: rem(30px)
-
-  .section-text
-    margin-bottom: 18px
-    p
-      line-height: 1.618
-      font-size: rem(18px)
-      margin-bottom: rem(12px)
-
-  .btn
-    padding: rem(10px) rem(16px)
-@media (max-width: 575px)
-  /* */
-
-@media (max-width: 375px)
-  /* */

@@ -13,12 +13,12 @@ html {
 body {
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
-    background: $background;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 100vh;
+    background: #ffffff;
     overflow-x: hidden;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
+    // min-height: 100vh;
 }
 
 img {
@@ -30,16 +30,4 @@ input,
 label {
     font-family: "Montserrat", sans-serif;
     outline: none;
-}
-
-@media (max-width: 991px) {
-    body {
-        font-size: 15px;
-    }
-}
-
-@media (max-width: 575px) {
-    body {
-        font-size: 14px;
-    }
 }

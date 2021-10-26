@@ -1,5 +1,5 @@
 .text-box
-  color: $black
+  color: #000
   max-width: 800px
   h1
     font-size: em(36px)
@@ -21,7 +21,7 @@
   a
     text-decoration: none
     font-weight: 600
-    color: $black
+    color: #000
     display: inline-block
     transform: translateX(0)
     position: relative
@@ -32,7 +32,7 @@
       right: -3%
       bottom: 1px
       height: 2px
-      background: $black
+      background: #000
       display: block
       position: absolute
       border-radius: 2px 0
@@ -60,17 +60,17 @@
     border-radius: 2px
     overflow: hidden
 
-@media (max-width: 1199px)
-  /* */
+  +to(1199px)
+    /* */
 
-@media (max-width: 991px)
-  /* */ 
+  +to(991px)
+    /* */ 
 
-@media (max-width: 767px)
-  /* */
+  +to(767px)
+    /* */ 
 
-@media (max-width: 575px)
-  /* */
+  +to(575px)
+    /* */
 
-@media (max-width: 375px)
-  /* */
+  +to(375px)
+    /* */
