@@ -1,0 +1,123 @@
+.section-cards
+  padding: 100px 0
+  +to(1199px)
+    padding: 80px 0
+  +to(991px)
+    padding: 60px 0
+  +to(767px)
+    padding: 50px 0
+
+.cards-list
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  grid-gap: 30px
+  +to(1199px)
+    grid-template-columns: repeat(2,1fr)
+  +to(767px)
+    grid-template-columns: 1fr
+
+.card
+  display: flex
+  flex-direction: column
+  padding: 30px
+  position: relative
+  border: 1px solid var(--grey)
+  +to(991px)
+    padding: 28px
+  +to(767px)
+    padding: 16px
+  &__inner
+    flex: 1
+    display: flex
+    flex-direction: column
+  &__img-box
+    height: 170px
+    display: block
+    margin-bottom: 20px
+    background-color: #D3D8E4
+    overflow: hidden
+    +to(991px)
+      height: 150px
+      margin-bottom: 18px
+    +to(575px)
+      margin-bottom: 12px
+    picture, img
+      transition: .5s ease
+      will-change: transform
+    &:hover
+      picture, img
+        transform: scale(1.05)
+  &__author
+    font-size: rem(13px)
+    margin-bottom: rem(6px)
+    line-height: 1.5
+    letter-spacing: 0.8px
+    +to(991px)
+      font-size: rem(12px)
+  &__title
+    font-size: rem(22px)
+    line-height: 1.36
+    letter-spacing: 1.2px
+    margin-bottom: rem(16px)
+    +to(1199px)
+      font-size: rem(20px)
+      line-height: 1.4
+    +to(991px)
+      font-size: rem(18px)
+      margin-bottom: rem(12px)
+      line-height: 1.44
+    +to(575px)
+      margin-bottom: rem(10px)
+    .link
+      color: var(--dark)
+  &__text-box
+    margin-bottom: 30px
+    display: -webkit-box
+    -webkit-box-orient: vertical
+    overflow: hidden
+    -webkit-line-clamp: 3
+    +to(1199px)
+      -webkit-line-clamp: 2
+    +to(575px)
+      margin-bottom: 26px
+    p
+      line-height: 1.62
+      letter-spacing: 0.8px
+      +to(991px)
+        font-size: rem(14px)
+      +to(767px)
+        line-height: 1.57
+  &__categories
+    position: absolute
+    z-index: 2
+    top: 12px
+    left: 0
+    background-color: var(--accent)
+    display: flex
+    padding: 6px 0
+  &__category
+    color: #fff
+    font-size: rem(13px)
+    padding: 0 rem(16px)
+    line-height: 1.7
+    letter-spacing: 1.2px
+    text-transform: uppercase
+    color: #FFFFFF
+    text-decoration: none
+    display: block
+    &:nth-child(n+2)
+      border-left: 1px solid #fff
+
+      border-left: 1px solid
+  &--dark
+    .card
+      &__categories
+        background-color: var(--accent-dark)
+      &__author
+        color: var(--accent-dark)
+      &__btn
+        background-color: var(--accent-dark)
+        border-color: var(--accent-dark)
+        &:hover
+          background-color: #fff
+          color: var(--accent-dark)
